@@ -1,0 +1,43 @@
+name: 💡 I have an idea
+description: Suggest an improvement or something new for the app
+labels: ["enhancement", "triage: pending"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good ideas usually come from the people using the app every day. Describe it in your own words — we'll take it from there.
+
+        🌍 **Write in whichever language you prefer.** You'll get an answer in the same language.
+
+        ⚠️ **This is a public space.** Before posting text or a screenshot, check that it doesn't show your bot token, the chat id of your channels, or health data you'd rather keep private.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What bothers you today?
+      description: The problem is usually worth more than the solution — with it, we can consider paths you may not have thought of.
+      placeholder: e.g.- I waste time checking whether I already sent today's data.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like the app to do?
+      placeholder: e.g.- show the date of the last send on the main screen.
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does this get in your way?
+      options:
+        - Every day
+        - A few times a week
+        - Once in a while
+        - Only happened once, but it seemed worth mentioning
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot or sketch of the idea
+      description: Optional. Drag the file into this field.
