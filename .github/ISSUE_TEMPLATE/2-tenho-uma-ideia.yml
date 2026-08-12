@@ -1,0 +1,41 @@
+name: 💡 Tenho uma ideia
+description: Sugira uma melhoria ou algo novo no app
+labels: ["enhancement", "triage: pending"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Boas ideias costumam vir de quem usa o app todo dia. Conte com suas palavras — a gente cuida do resto.
+
+        ⚠️ **Este espaço é público.** Antes de enviar print ou texto, confira se não aparece o token do seu bot, o número (chat id) dos seus canais ou dados de saúde que você não quer mostrar.
+
+  - type: textarea
+    id: incomodo
+    attributes:
+      label: O que te incomoda hoje?
+      description: O problema costuma valer mais do que a solução — com ele, dá para pensar em caminhos que você talvez nem tenha imaginado.
+      placeholder: Ex.- perco tempo conferindo se já enviei os dados hoje.
+    validations:
+      required: true
+
+  - type: textarea
+    id: ideia
+    attributes:
+      label: O que você gostaria que o app fizesse?
+      placeholder: Ex.- mostrar na tela inicial a data do último envio.
+
+  - type: dropdown
+    id: frequencia
+    attributes:
+      label: Com que frequência isso te atrapalha?
+      options:
+        - Todo dia
+        - Algumas vezes por semana
+        - De vez em quando
+        - Foi só uma vez, mas achei que valia contar
+
+  - type: textarea
+    id: imagem
+    attributes:
+      label: Print ou desenho da ideia
+      description: Opcional. Arraste o arquivo para dentro deste campo.
