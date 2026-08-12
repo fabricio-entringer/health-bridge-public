@@ -1,179 +1,181 @@
 <p align="center">
-  <img src="docs/banner.svg" alt="HealthBridge — do Apple Health para o Telegram, com um toque" width="860">
+  <img src="docs/banner.svg" alt="HealthBridge — from Apple Health to Telegram, with one tap" width="860">
 </p>
 
 <p align="center">
-  <b>Do Apple Health para o Telegram, com um toque.</b><br>
-  App de iPhone pessoal · sem servidor · o seu bot, os seus dados
+  <b>From Apple Health to Telegram, with one tap.</b><br>
+  A personal iPhone app · no server · your bot, your data
 </p>
 
 <p align="center">
-  <img alt="Plataforma" src="https://img.shields.io/badge/iOS-17%2B-0A1120?style=for-the-badge&logo=apple&logoColor=white">
-  <img alt="Destino" src="https://img.shields.io/badge/Telegram-destino-229ED9?style=for-the-badge&logo=telegram&logoColor=white">
-  <img alt="Servidor" src="https://img.shields.io/badge/servidor-nenhum-2EA043?style=for-the-badge">
+  <img alt="Platform" src="https://img.shields.io/badge/iOS-17%2B-0A1120?style=for-the-badge&logo=apple&logoColor=white">
+  <img alt="Destination" src="https://img.shields.io/badge/Telegram-destination-229ED9?style=for-the-badge&logo=telegram&logoColor=white">
+  <img alt="Server" src="https://img.shields.io/badge/server-none-2EA043?style=for-the-badge">
   <img alt="Analytics" src="https://img.shields.io/badge/analytics-zero-FF375F?style=for-the-badge">
 </p>
 
 <p align="center">
-  <a href="#-o-que-é">O que é</a> ·
-  <a href="#-o-que-o-app-faz">O que faz</a> ·
-  <a href="#-o-que-o-app-não-faz">O que não faz</a> ·
-  <a href="#-como-relatar-um-problema-ou-sugerir-algo">Como relatar</a> ·
-  <a href="#️-como-acompanhar-o-seu-pedido">Acompanhar</a> ·
-  <a href="#-privacidade">Privacidade</a>
+  <a href="#-what-it-is">What it is</a> ·
+  <a href="#-what-the-app-does">What it does</a> ·
+  <a href="#-what-the-app-does-not-do">What it doesn't do</a> ·
+  <a href="#-how-to-report-a-problem-or-suggest-something">How to report</a> ·
+  <a href="#️-how-to-follow-your-request">Follow your request</a> ·
+  <a href="#-privacy">Privacy</a>
 </p>
 
 ---
 
-## 👋 Bem-vindo
+## 👋 Welcome
 
-Este é o **espelho público do HealthBridge** — o canal aberto onde você relata bugs, tira dúvidas e sugere melhorias.
+This is the **public mirror of HealthBridge** — the open channel where you report bugs, ask questions and suggest improvements.
 
-> **O código-fonte não fica aqui.** Este repositório existe para uma coisa só: conversar com quem usa o app. Toda issue aberta aqui é lida, classificada e respondida.
+> **The source code is not here.** This repository exists for one thing only: talking to the people who use the app. Every issue opened here is read, triaged and answered.
 
 <p align="center">
-  <a href="https://github.com/fabricio-entringer/health-bridge-public/issues/new"><b>🐞 Relatar um problema</b></a> ·
-  <a href="https://github.com/fabricio-entringer/health-bridge-public/issues"><b>📋 Ver o que já foi relatado</b></a>
+  <a href="https://github.com/fabricio-entringer/health-bridge-public/issues/new/choose"><b>🐞 Report a problem</b></a> ·
+  <a href="https://github.com/fabricio-entringer/health-bridge-public/issues"><b>📋 See what's already been reported</b></a>
 </p>
+
+🌍 **Write in whichever language you prefer.** The app speaks several languages, and so does this channel — you'll get an answer in the same language you wrote in.
 
 ---
 
-## 🩺 O que é
+## 🩺 What it is
 
-O **HealthBridge** é um app de iPhone que lê as métricas do **Apple Health** que você autorizar — passos, frequência cardíaca, peso, energia ativa e outras — e as envia para um ou mais **canais ou grupos do Telegram**, usando **o seu próprio bot**.
+**HealthBridge** is an iPhone app that reads the **Apple Health** metrics you authorize — steps, heart rate, weight, active energy and others — and sends them to one or more **Telegram channels or groups**, using **your own bot**.
 
-Sem servidor, sem backend, sem nuvem no meio: o app fala direto com o Telegram a partir do seu iPhone.
+No server, no backend, no cloud in between: the app talks straight to Telegram from your iPhone.
 
 ```
 🍎 Apple Health  →  📱 HealthBridge  →  ✈️ Telegram
-   (só o que          (um toque no        (os canais que
-    você autorizar)    botão Enviar)       você cadastrar)
+   (only what          (one tap on         (the channels
+    you authorize)      the Send button)     you set up)
 ```
 
-É um app **pessoal**, distribuído por TestFlight/sideload. Não está na App Store, não é multiusuário e não coleta nada sobre você.
+It's a **personal** app, distributed through TestFlight/sideload. It isn't on the App Store, it isn't multi-user, and it collects nothing about you.
 
 ---
 
-## ✨ O que o app faz
+## ✨ What the app does
 
 | | |
 |---|---|
-| ✈️ **Envio com um toque** | Uma tela, um botão, o resultado por canal na hora. |
-| 🎯 **Você escolhe as métricas** | Tipo a tipo. O app só lê o que o Apple Health autorizou. |
-| 📡 **Vários canais de uma vez** | O mesmo relatório para todos os destinos cadastrados. |
-| 🧯 **Falha isolada** | Se um canal falha, os outros recebem normalmente — e o motivo fica registrado. |
-| 🗒️ **Histórico** | Uma entrada por envio, com data, métricas e o status de cada canal. |
-| 🔑 **Token protegido** | O token do seu bot fica guardado com segurança no iPhone e nunca é exibido de volta. |
-| ✍️ **Mensagem do seu jeito** | Texto de introdução, menção e formato (texto, Markdown ou JSON) configuráveis por canal. |
-| 📅 **Período do envio** | Hoje, um dia específico ou um intervalo. |
+| ✈️ **One-tap sending** | One screen, one button, per-channel result right away. |
+| 🎯 **You pick the metrics** | Type by type. The app only reads what Apple Health authorized. |
+| 📡 **Several channels at once** | The same report goes to every destination you set up. |
+| 🧯 **Isolated failures** | If one channel fails, the others still receive it — and the reason is recorded. |
+| 🗒️ **History** | One entry per send, with date, metrics and the status of each channel. |
+| 🔑 **Protected token** | Your bot token is stored securely on the iPhone and never shown back to you. |
+| ✍️ **Your own wording** | Intro text, mention and format (text, Markdown or JSON) configurable per channel. |
+| 📅 **Send period** | Today, a specific day, or a date range. |
 
 ---
 
-## 🚫 O que o app **não** faz
+## 🚫 What the app does **not** do
 
-Estas são decisões deliberadas de produto, não pendências. Saber disso antes economiza o seu tempo:
+These are deliberate product decisions, not missing pieces. Knowing them upfront saves you time:
 
-- **Não tem versão Android.** É um app iOS, e isso não está previsto para mudar.
-- **Não está na App Store.** A distribuição é pessoal, por TestFlight/sideload.
-- **Não é multiusuário.** Não há contas, login ou perfis de pessoas diferentes.
-- **Não usa servidor nosso.** Nada dos seus dados passa por qualquer infraestrutura nossa — porque não existe nenhuma.
-- **Não envia sozinho, em horário marcado.** O envio é sempre manual, iniciado por você.
-- **Não mostra gráficos nem exporta CSV.** O app envia e registra; a análise fica com você, no destino.
-- **Não escreve nada no Apple Health.** A permissão é apenas de leitura.
+- **No Android version.** It's an iOS app, and that isn't expected to change.
+- **Not on the App Store.** Distribution is personal, through TestFlight/sideload.
+- **Not multi-user.** No accounts, no login, no separate profiles.
+- **No server of ours.** None of your data passes through any infrastructure of ours — because there isn't any.
+- **No sending on a schedule.** Sending is always manual, started by you.
+- **No in-app charts or CSV export.** The app sends and records; the analysis happens at the destination, with you.
+- **Nothing is written back to Apple Health.** The permission is read-only.
 
-Pedido que esbarra em um desses pontos costuma ser recusado — mas **sempre com uma explicação concreta**, nunca com um "fora de escopo" seco. E alguns temas evoluem: se o seu caso for de fronteira, ele é marcado para avaliação em vez de ser fechado na hora.
+A request that runs into one of these usually gets declined — but **always with a concrete explanation**, never a bare "out of scope". And some topics do evolve: if your case sits on the border, it gets marked for review instead of being closed on the spot.
 
 ---
 
-## 🐞 Como relatar um problema ou sugerir algo
+## 🐞 How to report a problem or suggest something
 
-A forma mais rápida é **pelo próprio app**, que já preenche a versão e o modelo para você. Se preferir, [abra a issue aqui](https://github.com/fabricio-entringer/health-bridge-public/issues/new) — em português ou inglês, tanto faz.
+The quickest way is **from inside the app**, which fills in the version and the template for you. If you'd rather do it here, [open an issue](https://github.com/fabricio-entringer/health-bridge-public/issues/new/choose) — in any language.
 
 <details>
-<summary><b>O que faz um bom relato de bug</b> (clique para abrir)</summary>
+<summary><b>What makes a good bug report</b> (click to open)</summary>
 
 <br>
 
-1. **O que você fez** — a sequência de passos, na ordem.
-2. **O que aconteceu** — o comportamento que você viu.
-3. **O que você esperava** — como deveria ter sido.
-4. **Versão do app e do iOS** — o app inclui isso automaticamente quando o relato sai de dentro dele.
-5. **Print ou vídeo**, se der. Vale muito em problema de tela.
+1. **What you did** — the steps, in order.
+2. **What happened** — the behaviour you saw.
+3. **What you expected** — how it should have gone.
+4. **App and iOS version** — the app fills these in automatically when the report is sent from inside it.
+5. **A screenshot or video**, if you can. It's worth a lot for anything visual.
 
-⚠️ **Antes de anexar um print:** confira se ele não mostra o token do seu bot, o `chat_id` dos seus canais ou métricas de saúde que você não quer tornar públicas. Este repositório é aberto — qualquer pessoa lê o que você publica aqui.
+⚠️ **Before attaching a screenshot:** check that it doesn't show your bot token, the `chat id` of your channels, or health data you'd rather not make public. This repository is open — anyone can read what you post here.
 
 </details>
 
 <details>
-<summary><b>O que faz uma boa sugestão</b> (clique para abrir)</summary>
+<summary><b>What makes a good suggestion</b> (click to open)</summary>
 
 <br>
 
-1. **O problema, não a solução.** "Perco tempo conferindo se enviei hoje" leva mais longe do que "coloque um selo verde no topo".
-2. **Quando isso te atrapalha** — com que frequência, em que situação.
-3. **Como você resolve hoje**, se resolve.
+1. **The problem, not the solution.** "I waste time checking whether I already sent today" goes further than "add a green badge at the top".
+2. **When it gets in your way** — how often, in what situation.
+3. **How you work around it today**, if you do.
 
-Uma sugestão bem descrita pode ser aceita mesmo quando a solução final for diferente da que você imaginou.
+A well-described suggestion can be accepted even when the final solution ends up different from the one you had in mind.
 
 </details>
 
-**Antes de abrir:** dá uma olhada nas [issues existentes](https://github.com/fabricio-entringer/health-bridge-public/issues). Se alguém já relatou o mesmo, comentar lá ajuda mais do que abrir outra — pedidos repetidos são agrupados em uma issue só.
+**Before opening one:** have a look at the [existing issues](https://github.com/fabricio-entringer/health-bridge-public/issues). If someone already reported the same thing, commenting there helps more than opening another — repeated requests get grouped into a single issue.
 
 ---
 
-## 🏷️ Como acompanhar o seu pedido
+## 🏷️ How to follow your request
 
-Toda issue recebe etiquetas que dizem, sem você precisar perguntar, em que pé ela está.
+Every issue gets labels that tell you where it stands, without you having to ask.
 
-**Decisão da triagem**
+**Triage decision**
 
-| Etiqueta | O que significa |
+| Label | What it means |
 |---|---|
-| `triage: pending` | Ainda não foi analisada. |
-| `triage: accepted` | Aceita. Entrou na fila de trabalho. |
-| `triage: needs-info` | Falta alguma informação para decidir — a resposta está com você. |
-| `triage: under-review` | Caso de fronteira, em avaliação. |
-| `triage: duplicate` | Já existe uma issue sobre isso; a conversa foi centralizada lá. |
-| `triage: out-of-scope` | Não será feito, com o motivo explicado no comentário. |
+| `triage: pending` | Not reviewed yet. |
+| `triage: accepted` | Accepted. It's in the work queue. |
+| `triage: needs-info` | Something is missing before a decision can be made — the ball is with you. |
+| `triage: under-review` | A borderline case, being evaluated. |
+| `triage: duplicate` | There's already an issue about this; the conversation was centralised there. |
+| `triage: out-of-scope` | It won't be done, with the reason explained in a comment. |
 
-**Andamento (nas aceitas)**
+**Progress (on accepted ones)**
 
-| Etiqueta | O que significa |
+| Label | What it means |
 |---|---|
-| `status: queued` | Na fila. |
-| `status: in-progress` | Saiu da fila e está sendo trabalhada. |
-| `status: shipped` | Entregue — você é avisado na própria issue, com a versão. |
-| `status: closed-unresolved` | Encerrada sem entrega, com a explicação do desfecho. |
+| `status: queued` | In the queue. |
+| `status: in-progress` | Out of the queue and being worked on. |
+| `status: shipped` | Delivered — you're told in the issue itself, along with the version it's available in. |
+| `status: closed-unresolved` | Closed without delivery, with an explanation of the outcome. |
 
 ---
 
-## 🤝 O que você pode esperar
+## 🤝 What you can expect
 
-- **Toda issue é lida e respondida.** Nenhuma some no silêncio.
-- **Recusa vem com motivo concreto** e, quando existe, com uma alternativa.
-- **Nunca prometemos data.** "Aceito e na fila" é o máximo que dá para dizer com honestidade.
-- **Quando é entregue, você fica sabendo** — na própria issue, com o que mudou e onde está disponível.
-- **Se o problema voltar, reabra.** Issue fechada não é assunto encerrado.
-
----
-
-## 🔒 Privacidade
-
-- O app lê **apenas** os tipos de métrica que você autorizar, um a um, e **nunca escreve** no Apple Health.
-- O **único destino de rede** é a API do Telegram, falando com **o seu bot**, para **os seus canais**.
-- **Zero** analytics, telemetria ou serviços de terceiros.
-- O token do seu bot fica guardado com segurança no iPhone — não vai para backup nem para a nuvem, e não há como exibi-lo ou exportá-lo.
+- **Every issue is read and answered.** None of them disappear in silence.
+- **A decline comes with a concrete reason** and, when there is one, an alternative.
+- **We never promise dates.** "Accepted and queued" is the most that can be said honestly.
+- **When it ships, you'll know** — in the issue itself, with what changed and which version has it.
+- **If the problem comes back, reopen it.** A closed issue isn't a closed subject.
 
 ---
 
-## 🌍 English
+## 🔒 Privacy
 
-**HealthBridge** is a personal iOS app that reads the Apple Health metrics you authorize and sends them to your own Telegram channels — on demand, with a single tap. No server, no backend, no third parties.
+- The app reads **only** the metric types you authorize, one by one, and **never writes** to Apple Health.
+- The **only network destination** is the Telegram API, talking to **your bot**, for **your channels**.
+- **Zero** analytics, telemetry or third-party services.
+- Your bot token is stored securely on the iPhone — it doesn't go to backups or to the cloud, and there's no way to display or export it.
 
-This repository is the **public mirror**: the source code is not here, but bug reports, questions and suggestions are very welcome. Feel free to [open an issue](https://github.com/fabricio-entringer/health-bridge-public/issues/new) in English — the labels above tell you exactly where your request stands.
+---
+
+## 🌍 Em português
+
+O **HealthBridge** é um app de iPhone que lê as métricas do Apple Health que você autorizar e as envia, sob demanda e com um toque, para os seus canais do Telegram, usando o seu próprio bot. Sem servidor, sem backend, sem terceiros no meio.
+
+Este repositório é o **espelho público**: o código-fonte não fica aqui, mas relatos de bug, dúvidas e sugestões são muito bem-vindos. Pode [abrir uma issue](https://github.com/fabricio-entringer/health-bridge-public/issues/new/choose) em português — o formulário está em inglês, mas você escreve no seu idioma e a resposta vem no mesmo.
 
 ---
 
 <p align="center">
-  <sub>Projeto pessoal de <a href="https://entringer.dev">Fabrício Entringer</a> · uso interno, não distribuído pela App Store</sub>
+  <sub>A personal project by <a href="https://entringer.dev">Fabrício Entringer</a> · internal use, not distributed on the App Store</sub>
 </p>
