@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📖 Antes de abrir — o que o app faz e o que não faz
+    url: https://github.com/fabricio-entringer/health-bridge-public#readme
+    about: Vale uma olhada rápida. Algumas coisas são decisões de produto, não pendências.
