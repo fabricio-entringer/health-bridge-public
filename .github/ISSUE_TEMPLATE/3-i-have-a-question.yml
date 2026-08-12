@@ -1,0 +1,26 @@
+name: ❓ I have a question
+description: Ask anything about how to use the app
+labels: ["question", "triage: pending"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask away. If a question came up for you, it probably came up for someone else too — and it helps us improve the explanations.
+
+        🌍 **Write in whichever language you prefer.** You'll get an answer in the same language.
+
+        ⚠️ **This is a public space.** Never post your bot token here. If your question involves the token, describe the situation without pasting the code.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What's your question?
+      placeholder: e.g.- how do I find the chat id of my group?
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried so far?
+      description: Optional. Knowing what you already tried keeps the answer from repeating what didn't work.
