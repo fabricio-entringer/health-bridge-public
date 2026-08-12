@@ -1,0 +1,24 @@
+name: ❓ Tenho uma dúvida
+description: Pergunte qualquer coisa sobre como usar o app
+labels: ["question", "triage: pending"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Pode perguntar sem medo. Se a dúvida aparece para você, provavelmente aparece para mais gente — e vira material para melhorar as explicações.
+
+        ⚠️ **Este espaço é público.** Nunca escreva aqui o token do seu bot. Se a dúvida envolve o token, descreva a situação sem colar o código.
+
+  - type: textarea
+    id: duvida
+    attributes:
+      label: Qual é a sua dúvida?
+      placeholder: Ex.- como faço para descobrir o número (chat id) do meu grupo?
+    validations:
+      required: true
+
+  - type: textarea
+    id: tentativas
+    attributes:
+      label: O que você já tentou?
+      description: Opcional. Saber por onde você passou evita que a resposta repita o que não funcionou.
